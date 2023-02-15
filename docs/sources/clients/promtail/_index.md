@@ -53,7 +53,7 @@ parsed data to Loki. Important details are:
   - `.z`: Data will be decompressed with the native Zlib Golang pkg (`pkg/compress/zlib`)
   - `.bz2`: Data will be decompressed with the native Bzip2 Golang pkg (`pkg/compress/bzip2`)
   - `.tar.gz`: Data will be decompressed exactly as the `.gz` extension.
-      However, because `tar` will add its metadata at the beggining of the
+      However, because `tar` will add its metadata at the beginning of the
       compressed file, **the first parsed line will contains metadata together with
       your log line**. It is illustrated at
       `./clients/pkg/promtail/targets/file/decompresser_test.go`.
